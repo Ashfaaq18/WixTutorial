@@ -1,9 +1,13 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-  <Package Name="WixTutorialPackage" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="1eb1264e-6da1-4fd6-8071-24951f36a731">
+  <Package 
+	  Name="WixTutorialPackage" 
+	  Manufacturer="Ash Concepts" 
+	  Version="1.0.0.0" 
+	  UpgradeCode="1eb1264e-6da1-4fd6-8071-24951f36a731">
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
     <Feature Id="Main">
-      <ComponentGroupRef Id="ExampleComponents" />
+      <ComponentGroupRef Id="AppComponents" />
     </Feature>
   </Package>
 </Wix>
