@@ -7,7 +7,8 @@
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
 	<MediaTemplate EmbedCab="yes"/>
-	  
+
+	<Launch Condition="MsiNTProductType = 1" Message="TODO Wrong OS type! TODO"/>
     <Feature Id="Main">
       <ComponentGroupRef Id="AppComponents" />
     </Feature>
